@@ -1,16 +1,16 @@
 -- Creating the Absenteeism_at_work table
 -- This table stores data related to employee absenteeism, including reasons, personal details, workload, and absenteeism hours.
-CREATE TABLE Absenteeism_at_work (
+CREATE TABLE absenteeism_at_work (
     ID INTEGER PRIMARY KEY,
     Reason_for_absence INTEGER,
     Month_of_absence INTEGER,
     Day_of_the_week INTEGER,
     Seasons TEXT,
     Transportation_expense NUMERIC,
-    Distance_from_Residence_to_Work NUMERIC,
+    Distance_from_Residence NUMERIC,
     Service_time INTEGER,
     Age INTEGER,
-    Work_load_Average_per_day TEXT,
+    Workload_average TEXT,
     Hit_target NUMERIC,
     Disciplinary_failure BOOLEAN,
     Education INTEGER,
@@ -21,7 +21,7 @@ CREATE TABLE Absenteeism_at_work (
     Weight NUMERIC,
     Height NUMERIC,
     Body_mass_index NUMERIC,
-    Absenteeism_time_in_hours NUMERIC
+    Absenteeism_time NUMERIC
 );
 
 -- Creating the Compensation table
